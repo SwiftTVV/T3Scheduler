@@ -1,0 +1,108 @@
+0.97.5.7
+
+Fixed #75: Exception in Form7 add new row in KBNA when starting from blank schedule
+Added    : Message notfications when TS3 seesm to be corrupted instead of exceptions
+
+0.97.5.6
+
+Fixed #73: Add support for complex liveries such as "regional, XXX" in the last column of schedule.csv
+
+0.97.5.5
+
+Fixed #72: Crash on modifying or randomizing KBNA Nyerges database (Form1, line 1140)
+Fixed #71: Flight number range box not scrollable
+
+0.97.5.4
+
+Fixed    : Form7 GA airplane list choice from current schedule, now from global list (filtered)
+Added #66: Add pulldown for airplane database
+
+0.97.5.3
+
+Fixed    : Lockin/unlocking parameters in relation with flight statistics editor
+Added #56: Bump hourly profiles flights +/- 10%
+
+0.97.5.2
+
+Fixed    : Crash in stat editor when GA flights present
+Fixed    : Update all probabilities on edit airline flights page
+
+0.97.5.1
+
+Fixed #61: Error in time drop down - two 12:00, no 13:00 
+Fixed #63: Empty airplane list allowed to pass checkbox and Apply in Form7
+Fixed #64: possible error removing too many airplanes after Apply Form7 (regional only)
+
+0.97.5
+
+Added #58: Create and save detailed schedule statistics information
+Fixed #59: Schedules created from edited statistics do not follow airport probabilities 
+Fixed #57: Combined probability of flights in airline editor now too low 
+Added #60: Filter by keyboard list of entries in "Add airline" (Form5) and then "Add destination" (Form7)
+
+0.97.4
+
+Fixed #48: Write to another file if ga.csv or schedule.csv is locked, make sure it is explicitly closed
+Fixed #44: Schedule editor: add airline widget is not closed on reload or page change 
+Fixed #45: Randomize arr/dep ratio along with flights 
+Fixed #46: Make clear what to do after "Apply" on hourly profile is clicked: compute and plot
+Fixed #43: Schedule editor: in airline flights editor sum of flights is wrong (doubled) 
+Fixed #42: In some cases probabilities of airlines swapped after schedule editor edits are applied 
+Fixed #50: Unload plot and database after restore all 
+Fixed #51: When adding a lot of flights some are incorrectly spaced
+Added #52: Create empty stats in schedule stat editor to allow start from scratch
+Added #53: Add master sliders for hourly profile
+Fixed #49: Crash when executing "restore all ..." in "More ..."
+
+0.97.3
+
+Fixed #41: Schedule editor: airport list choice in flight edit only shows current schedule airports 
+Fixed #39: Error in import file format verification on regular schedules 
+Fixed #36: Problems importing lines with two airport codes 
+Fixed #38: Crash on interplay between hourly profile and adjustments to stats 
+Fixed #37: Sliders don’t go all the way to zero when lots of flights on hourly profile (tooltip)
+Fixed #40: Schedule editor: adding regional airline does not work sometimes 
+Added #29: Import hourly profiles from schedule and load/save from a file 
+Added #32: Make a clone of current schedule directory 
+
+0.97.2
+
+Fixed    : Flight numbers choice only within airline or GA type
+Fixed #33: Allow for Enterprise User on FlightAware import file format 
+Fixed #34: Program hangs on KLAS with large number of GA flights 
+Fixed #31: Refresh "values" panel after editing statistics, grey out hourly values if no stat, ungrey otherwise
+Fixed    : Empty destination on new flight if no other flights exist
+Fixed #35: Verify custom flight number ranges 
+Fixed    : Returning regional and cargo hourly profile values were incorrect
+
+
+0.97.1
+
+Fixed #28: Accepting all global combinations of airlines that have liveries, some are not
+
+0.97
+
+Added #18: Format checker for schedule.csv first read
+Added #17: Add exception intercept to log line numbers
+Fixed #15: airports.csv is in KLAS/databases/default
+Added #19: Copy and backup terminals.csv
+Fixed #20: Special liveries not included in randomized schedules
+Added #13: Regenerate flight numbers and airlines only
+Fixed #24: Recognize regional livery XXX_YYY
+Added #26: Implement two-part designations for flight number ranges
+Added #25: Use default flight number ranges as an option
+Added #11: Add or exclude airlines from randomized schedules, enable editing/modifying base schedule statistics
+
+0.96.4
+
+Fixed #1: Hourly profiles do not revert to constant values in random schedules
+Added #9: optional side-by-side bar plot
+Fixed #12: GA airline callsigns spelled
+Added #4: HTML schedule export
+Added   : Plot export as PNG
+Added #2: Option where we can control the amount of cargo and regional aircraft
+Added #7: Randomize flights per hour
+Added   : TS3 folder select dialog init set to Environment.SpecialFolder.MyComputer
+Fixed   : Error parsing default database schedules when both "" and non "" entries present
+Added #10: Option to revert default databases to original state and remove cache
+Fixed   : JANET airline as special case for import

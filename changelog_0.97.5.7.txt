@@ -1,0 +1,4 @@
+0.97.5.7
+
+Fixed #75: Exception in Form7 add new row in KBNA when starting from blank schedule
+Added    : Message notfications when TS3 seesm to be corrupted instead of exceptions
